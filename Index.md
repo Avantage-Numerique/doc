@@ -1,15 +1,7 @@
-1. Communication
-2. Connexion
-3. Équipements
-4. Événements
-5. Infrastructure technique
-6. Lieux
-7. Occupations
-8. Ontologie
-9. Organisations
-10. Personnes
-11. Projets
-12. Lexique
-	1. [Dictionnaire](/Dictionnaire.md)
-	2. [Initiative](/Initiative.md)
-	3. [Nomenclature](/Nomenclature.md)
+# Page de destination
+Tags: #documentation_fonctionnelle #documentation_technique #product_backlog 
+
+1. [Documentation fonctionnelle](/documentation_fonctionnelle/index.md)
+2. [Documentation technique](/documentation_technique/index.md)
+3. [Backlog de produit](/product_backlog/index.md)
+4. [Lexique](Lexique.md)

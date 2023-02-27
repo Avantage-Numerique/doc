@@ -1,2 +1,0 @@
-Entité: 
-Taxonomie:
