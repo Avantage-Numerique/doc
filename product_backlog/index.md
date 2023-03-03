@@ -8,7 +8,7 @@ Tags: #product_backlog
 5. Événements
 6. Infrastructure technique
 7. Lieux
-8. Métadonnées
+8. [Métadonnées](/product_backlog/metadonnees/index_metadonnees.md)
 9. Occupations
 10. [Ontologie](/product_backlog/ontologie/index_ontologie.md)
 11. Organisations
@@ -16,4 +16,4 @@ Tags: #product_backlog
 13. Projets
 
 ---
-→ [Retour à la page de destination](/index)
+→ [Retour à la page de destination](/index.md)

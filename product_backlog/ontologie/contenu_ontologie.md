@@ -9,4 +9,4 @@
 | [10.1.1.](https://app.asana.com/0/1202346288002784/1202346288002806/f) | Monter les classes principales de l'ontologie | ✅ | 🟥 | En tant que développeur, je souhaite connaître quels seront les données principales récoltées dans la BDSOL pour pouvoir les implémenter. |
 
 ---
-→ [Retour à l'index du product backlog sur l'ontologie](/product_backlog/ontologie/index_ontologie)
+→ [Retour à l'index du product backlog sur l'ontologie](/product_backlog/ontologie/index_ontologie.md)

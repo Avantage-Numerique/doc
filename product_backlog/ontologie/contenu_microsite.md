@@ -6,4 +6,4 @@
 | 10.2.2. | Ajouter un sous-domaine pour héberger le Microsite | ✅ | N/A | En tant que..., je souhaite... pour... |
 
 ---
-→ [Retour à l'index du product backlog sur l'ontologie](/product_backlog/ontologie/index_ontologie)
+→ [Retour à l'index du product backlog sur l'ontologie](/product_backlog/ontologie/index_ontologie.md)

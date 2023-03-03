@@ -7,4 +7,4 @@ Tags: #documentation_fonctionnelle
 4. [Approche de production](/documentation_fonctionnelle/approche_de_production.md)
 
 ---
-→ [Retour à la page de destination](/index)
+→ [Retour à la page de destination](/index.md)
