@@ -1,6 +1,6 @@
 # 10. Ontologie
 
-→ [Documentation technique sur l'ontologie](/documentation_technique/ontologie)
+→ [Documentation technique sur l'ontologie](/documentation_technique/ontologie.md)
 
 ## 10.1. Conception de l'ontologie
 

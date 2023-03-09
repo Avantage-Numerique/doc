@@ -20,7 +20,7 @@ La Base de données structurées, ouvertes et liées (BDSOL, *titre de travail*)
 
 Le porteur de dossier de la BDSOL est le Petit Théâtre du Vieux Noranda (PTVN). L’organisme est donc le détenteur de la donnée. Il en assume la responsabilité légale et la gestion opérationnelle.
 
-→ [Transfert de propriété](documentation_fonctionnelle/transfert_de_propriete.md)
+→ [Transfert de propriété](/documentation_fonctionnelle/transfert_de_propriete.md)
 
 ## Une approche collaborative
 
