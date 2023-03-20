@@ -9,10 +9,15 @@
 
 ### Ajout
 ```typescript
-taxonomiesSibling: {  
-	type: ObjectId,  
-	required: false
-},  
+domains: {
+    type: [{
+        domain: {
+            type: mongoose.Types.ObjectId,
+            ref: "Taxonomy"
+        },
+        status: Status.schema
+    }]
+}
 ```
 
 ### Forme du schema de taxonomie
@@ -50,7 +55,16 @@ taxonomiesSibling: {
         type: String    //},    status: {  
         type: Source.schema,  
         required: true,  
-    }  
+    },
+	domains: {
+	    type: [{
+	        domain: {
+	            type: mongoose.Types.ObjectId,
+	            ref: "Taxonomy"
+	        },
+	        status: Status.schema
+	    }]
+	}
 }
 ```
 
@@ -70,7 +84,7 @@ Dans leur schema
 	5.  Apprentissages
 	6.  Lieux
 	7. ~~Événement~~ 
-	   je ne suis pas certain, car l'événements va faire parti d'un projets ou d'un apprentissage.
+	   je ne suis pas certain, car l'événements va faire parti d'un projets ou d'un apprentissage
 
 ## Schema dans les entités et dans taxonomies
 ```typescript
@@ -82,6 +96,6 @@ domains: {
         },
         status: Status.schema
     }]
-},
+}
 ```
 
