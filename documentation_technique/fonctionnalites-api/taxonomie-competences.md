@@ -1,4 +1,5 @@
-#taxonomie 
+# Compétence (la taxonomie)
+tags : #taxonomie #documentation_technique
 
 ## [[Conception]] et [[Brainstorm]]
 

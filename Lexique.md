@@ -21,5 +21,9 @@ A B C D [E](#e) F G H I J K L M N [O](#o) [P](#p) Q R S [T](#t) U V W X Y Z
 
 **Taxonomie**: ou taxonomie des données, ... est une classification des données en catégories et sous-catégories. Elle offre un point de vue unique sur les données d’une organisation et introduit des terminologies et sémantiques communes à l’ensemble des systèmes. [source](https://www.talend.com/fr/resources/gdpr-compliance-create-data-taxonomy/)
 
+**Taxonomie statique** : Une taxonomies qui n'est pas sauvegardé dans la base de données, car elle n'aura pas de gestion d'ajouts et d'édition par des utilisateurs.
+
+**Taxonomie dyanamique** : À l'inverse d'une statique, la taxonomies dynamique est une taxonomies qui évoluera au gré des besoins des utilisateurs et qui possède sa page répertoire.
+
 ---
 → [Retour à la page de destination](/Index.md)
