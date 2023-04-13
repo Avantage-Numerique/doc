@@ -1,35 +1,19 @@
-#portfolio 
+tag : #documentation_technique 
+
+## Objectifs
 
 
-## [[Conception]] et [[brainstorm]]  de {{title}}
+## [[Conception]] et [[brainstorm]] de {{title}}
 
 
-## Structure de la [[taxonomie]]
+## Structure 
 
-```typescript
-{  
-    {{property}}: {  
-        type: {{type}},  
-        required: [true, ''],
-        //ref: "Taxonomy"
-        //enum: TaxonomiesCategoriesEnum,  
-        //lowercase: true,
-        //trim: true
-    },
-    status: Status.schema
-}
+```javascript
+
 ```
 
-### À l'intérieur d'une autre entité
+### Exemple
 
-```typescript
-technologies: {
-    type: [{
-        technology: {
-            type: mongoose.Types.ObjectId,
-            ref: "Taxonomy"
-        },
-        status: Status.schema
-    }]
-}
+```javascript
+
 ```
