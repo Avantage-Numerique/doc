@@ -3,7 +3,7 @@ tag : #documentation_technique
 ## Objectifs
 Permettre de contribuer à la BDSOL avec un flow plus direct entre les données requises et les données additionnels non mandatoires.
 
-## [[Conception]] et [[brainstorm]] de mode-contribuer
+## [[Conception]] du mode-contribuer
 
 ### Flow de l'utilisateur pour contribuer
 1. Arriver sur l'accueil du site
