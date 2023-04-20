@@ -3,10 +3,10 @@ tag : #documentation_technique
 ## Objectifs
 
 
-## [[Brainstorm]] pour {{title}}
+## [[Brainstorm]] pour form-input-select2
 
 
-## [[Conception]] pour {{title}}
+## [[Conception]] pour form-input-select2
 
 
 ## Structure
