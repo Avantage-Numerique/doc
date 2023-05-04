@@ -13,15 +13,34 @@ Tout les simples et les composants d'un simple (header, content, footer), doiven
 ### Version de base
 La version de base utilisera un visuel par défault qui sera utilisé
 ```jsx
-<SimpleLayout model={currentModel} />
+<EntitySimple model={currentModel} />
 ```
 
-### Exemple
-
+### Exemples
+1. Les paramètres ne sont pas défini encore
 ```jsx
-<SimpleLayout 
-	model={currentModel} 
+<EntitySimple 
+	model={model}
+	className={"context-class"} 
 	params={{orientation: "vertical"}}
 	header={changeComponentForHeader}
 	>
+```
+
+2. Exemple pour OrganisationSimple
+Ici on a du props drilling par contre avec le model qui est passé d'un component supra vers le component abstrait `EntitySimple`.
+```jsx
+import React from "react"  
+  
+import styles from './OrganisationSimple.module.scss'  
+import EntitySimple from "@/DataTypes/common/layouts/EntitySimple/EntitySimple";  
+  
+const OrganisationSimple = ({ model }) => {  
+  
+    return (  
+        <EntitySimple model={model} className={`${styles["org-simple"]}`} />  
+    )  
+}  
+  
+export default OrganisationSimple
 ```
