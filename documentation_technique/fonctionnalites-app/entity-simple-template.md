@@ -44,3 +44,29 @@ const OrganisationSimple = ({ model }) => {
   
 export default OrganisationSimple
 ```
+
+3. Exemple pour PersonSimple
+   Avec un exemple d'overwrite de component interne : Header ou Content.
+```jsx
+import React from "react"  
+  
+/***  Local styling ***/  
+import styles from './PersonSimple.module.scss'  
+import EntitySimple from "@/DataTypes/common/layouts/EntitySimple/EntitySimple";  
+import {replacePathname} from "@/src/helpers/url";  
+  
+const PersonSimple = ({ model }) => {  
+
+    const PersonHeader = (  
+        <div>
+	        {/*NouvelHeader*/}
+        </div>
+    );  
+  
+    return (  
+        <EntitySimple model={model} className={`${styles["person-simple"]}`} Header={PersonHeader} />  
+    )  
+}  
+  
+export default PersonSimple
+```
