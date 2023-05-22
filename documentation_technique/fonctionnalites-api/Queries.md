@@ -28,7 +28,7 @@ submitRequest(
 
 
 ### Structure d'une requête complexe
-Désigner pour recevoir les paramètres de la requêtes en format json. L'api gère les requêtes complètes en POST seuelement présentement.
+Reçois les paramètres de la requêtes en format json. L'api gère les requêtes complètes en POST seulement présentement.
 
 Exemple
 `query` est égale à votre requête.
@@ -39,8 +39,8 @@ submitRequest(
     {
 	    category:"domains",  //category == "domaine"
 	    name:"", //any/all
-	    or: "gte:1000",
-	    or: [
+	    or: "gte:1000",//this is a property or
+	    or: [//or is considered a where OR only if an array
 		    {createdAt: `gte:${date}`}, // where createdAt date >= date
 		    {upddateAt: `lte:${date}`}
 	    ]
@@ -48,6 +48,45 @@ submitRequest(
 );
 ```
 
+#### Implémentation dans le query builder
+1. l'Api Reçoit le query via une requête post `/search`
+2. Le controler reçoit le query venant de la route et transmet le query au Query builder
+3. Le query builder analyse le query avec une boucle.
+	1. Si l'élément a une entré avec une clé reconnu <u>et</u> Array comme valeur. 
+		1. Il considère cet élément comme une section.
+	2. Chaque section reconnu est analysé comme celle au premier niveau.
+	3. La section est ajouter au query appliquer à la méthode dans service.
+
+
+### Clés de sections
+
+#### `or`
+Permet de faire une requête OR sur les valeurs inclus dans le array de la valeur.
+
+Exemple de requête
+```javascript
+let query = {
+    name: "", //any/all
+    or: [
+	    {category: `skills`},
+	    {category: `domains`}
+    ]
+};  
+```
+
+#### `and`
+Permet de faire une requête OR sur les valeurs inclus dans le array de la valeur.
+
+Exemple de requête
+```javascript
+let query = {
+    name: "", //any/all
+    and: [
+	    {category: `skills`},
+	    {category: `domains`}
+    ]
+};  
+```
 
 ### Mots clés implémentés
 
@@ -88,10 +127,10 @@ let query = {
 ```
 
 ## Todo
-### caching des queries
+### Caching des queries
 On pourrait utiliser un index cached (avec des noms) pour cached les queries.
 
-### Brainstorm.
+#### Brainstorm.
 Avec des UUID ? qu'on retourne en réponses 
 
 
