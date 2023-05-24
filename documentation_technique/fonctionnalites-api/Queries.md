@@ -51,11 +51,14 @@ submitRequest(
 #### Implémentation dans le query builder
 1. l'Api Reçoit le query via une requête post `/search`
 2. Le controler reçoit le query venant de la route et transmet le query au Query builder
-3. Le query builder analyse le query avec une boucle.
-	1. Si l'élément a une entré avec une clé reconnu <u>et</u> Array comme valeur. 
-		1. Il considère cet élément comme une section.
-	2. Chaque section reconnu est analysé comme celle au premier niveau.
-	3. La section est ajouter au query appliquer à la méthode dans service.
+3. Le `querybuilder` analyse le query avec une boucle.
+	1. Si l'élément a une entré avec une clé reconnu <u>et</u> `Array` comme valeur. 
+		1. Il considère cet élément comme une section logique.
+		2. Chaque section reconnu est analysé comme celle au premier niveau.
+		3. Chaque section sauvegardé est supprimer du `query` original afin de permettre à la suite des paramètres d'êtres analysé.
+		4. Les sections sont ajoutés à l'instance `ApiQuery.sections` et sera renvoyé au `controler` ensuite.
+	2. Le `querybuilder` prend ensuite chacune des propriétés restantes et ajuster les propriété et ajustement selon les mots clés inclus.
+	3. Le `querybuilder` renvoie ensuite le query (`ApiQuery.transmuted`) au `controler` pour être recherché
 
 
 ### Clés de sections
@@ -84,6 +87,18 @@ let query = {
     and: [
 	    {category: `skills`},
 	    {category: `domains`}
+    ]
+};  
+```
+
+#### `in`
+Implémenté, mais la fonctionnalité n'a pas encore été testé avec un exemple ici.
+
+```javascript
+//@todo
+let query = {
+    in: [
+	    //@todo
     ]
 };  
 ```
