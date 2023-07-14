@@ -58,32 +58,7 @@ Les fiches personnes seront traité différemment.
 - **Permission de modification** : comprend un accès d'édition (ou dit contribution dans l'application) pour ajouter, changer ou modifier du contenu et média).
 
 ## Structure
-
-@startuml "Permissions utilisateurs"  
-
-entity "Entité" as e {
-	Type : String
-	---
-	Propriétés reliées à la modération
-	*Détenteur
-	*historique
-	---
-	Permissions nécessaires
-	*Créer
-	*Modifier
-	*Transférer la détention   
-}
-entity  "Utilisateur" as user {
-	*Profil
-	Permissions détenues
-	*Détenter
-	*Créer
-	*Modifier
-	*Transférer
-}
-user::Détenter o-r- e::Détenteur
-
-@enduml
+![[utilisateurs.svg]]
 
 ### Permissions d'un utilisateur
 ```javascript
