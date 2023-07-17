@@ -26,6 +26,7 @@ Voir [le document de résumé de la rencontre stratégique ](https://docs.google
 	1. Garder la détention de la nouvelle entité.
 	2. Marqué l'entité comme orpheline, appelé entité zombie par l'équipe.
 	4. N'importe qui peut demander la propriété de la fiche.
+
 ![modération globale](/documentation_technique/images/moderation-globale.png)
 
 ### La modération d'entité Personne
@@ -36,6 +37,9 @@ Les fiches personnes seront traité différemment.
 4. La création d'une deuxième entité personne par un utilisateur devient automatiquement orpheline.
 6. Une personne peut être assignée à une autre entités (équipe, etc.) même si aucun utilisateur n'est associé.
 	1. Dans ce cas, l'entité personne créée et assignée au travers d'une autre entité devient orpheline (sans détenteur).
+
+![modération personne](/documentation_technique/images/entite-personne-flow.png)
+
 ### Les entités orphelines
 1. Les entités orphelines peuvent être ajouter avec le contenu obligatoire seulement.
 	1. Le contenu obligatoire varie selon le type d'entité.
@@ -44,6 +48,9 @@ Les fiches personnes seront traité différemment.
 4. Les entités personnes orphelines peuvent être réquisitionnée par un nouvelle utilisateur lors de la création de son entités personnes assignées.
 
 ![Modération dans l'assignation](/documentation_technique/images/moderation-assignation.png)
+
+![Modération dans l'assignation](/documentation_technique/images/etats-entite.png)
+
 
 ## Vocabulaire
 - **Propriété** : Le terme est utiliser comme traduction à ownership et non pour référer à une propriété intellectuel, dans la sens légale de propriété.
