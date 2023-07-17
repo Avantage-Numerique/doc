@@ -26,7 +26,7 @@ Voir [le document de résumé de la rencontre stratégique ](https://docs.google
 	1. Garder la détention de la nouvelle entité.
 	2. Marqué l'entité comme orpheline, appelé entité zombie par l'équipe.
 	4. N'importe qui peut demander la propriété de la fiche.
-![[./images/bdsol-moderation-1 - Lorsqu’un utilisateur ajoute ou modifit une entité@2x.png]]
+![[/documentation_technique/images/bdsol-moderation-1 - Lorsqu’un utilisateur ajoute ou modifit une entité@2x.png]]
 
 ### La modération d'entité Personne
 Les fiches personnes seront traité différemment.
@@ -43,7 +43,7 @@ Les fiches personnes seront traité différemment.
 3. Les entités orphelines peuvent être réquisitionnée par un utilisateur.
 4. Les entités personnes orphelines peuvent être réquisitionnée par un nouvelle utilisateur lors de la création de son entités personnes assignées.
 
-![[./images/bdsol-moderation-1 - Lorsqu’un utilisateur assigne une entité dans une autre entité@2x.png]]
+![[/documentation_technique/images/bdsol-moderation-1 - Lorsqu’un utilisateur assigne une entité dans une autre entité@2x.png]]
 
 ## Vocabulaire
 - **Propriété** : Le terme est utiliser comme traduction à ownership et non pour référer à une propriété intellectuel, dans la sens légale de propriété.
