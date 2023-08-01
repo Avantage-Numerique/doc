@@ -12,7 +12,7 @@ Voir [le document de résumé de la rencontre stratégique ](https://docs.google
 
 Une section de vocabulaire est présente à la fin de la page.
 
-![[/documentation_technique/images/moderation-globale.png]]
+![Modération](/documentation_technique/images/moderation-globale.png)
 
 ## La modération décrit de façon algorithmique
 1. Un utilisateur peut ajouter des entités (voir définition entités)
