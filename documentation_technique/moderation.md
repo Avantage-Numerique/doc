@@ -1,17 +1,20 @@
 tag : #documentation_technique 
 
+# Modération
+
 ## Objectifs
-Permet un contrôle des entités par des utilisateurs responsables et engagé tout en favorisant l'ajout de données.
+Permet un contrôle des entités par des utilisateurs responsables et engagés tout en favorisant l'ajout de données avec le moins d'embûche possible.
 
 ## [[Brainstorm]] pour modération
 Voir [le document de résumé de la rencontre stratégique ](https://docs.google.com/document/d/1h7X1RDSLDFznKng82zCB0y5zhOoJHq-L0ugmJkLKSJw/edit)
 
-
 ## [[Conception]] pour modération
+
+Une section de vocabulaire est présente à la fin de la page.
 
 ![[/documentation_technique/images/moderation-globale.png]]
 
-### La modération décrit de façon algorithmique
+## La modération décrit de façon algorithmique
 1. Un utilisateur peut ajouter des entités (voir définition entités)
 2. Un utilisateur doit être connecté dans l'application pour ajouter ou modifier du contenu.
 3. Lors de l'ajout d'une entité, l'utilisateur à l'origine de la création devient le détenteur de l'entité.
@@ -53,8 +56,8 @@ Afin de déterminer la qualité des données d'une entité.
 3. Les modifications suggérés sont visible seulement par le détenteur.
 4. Quel procédé on choisi pour qu'un utilisateur puisse prendre la détention d'une entité.
 
-## Proposition de liaison
-Un utilisateur détenant une entité 
+## Proposition d'assignation
+Un utilisateur détenant une entité peut accepter ou non une assignation
 
 ## Idées
 \+ Ajouter des modes de détentions granulaire pour des entités : 
@@ -79,12 +82,12 @@ Un utilisateur détenant une entité
 - **Détentions granulaire** : mode de détention segmentés en plusieurs parcelles avec chacune ses règles d'accès.
 - **Codétenteurs** : Les utilisateurs détenant une détention granulée de l'entité
 - **Entité** : Un élément principale dans la structure des données. Se traduit par : personne, organisation, projet, événement, lieux, équipement, etc. 
-	- Une entité est consulter grâve à une fiche visible de plusieurs méthode. 
+	- Une entité est consulter grâce à une fiche visible de plusieurs méthode. 
 		- Méthode simple (information réduite) et 
 		- Méthode complète, avec toutes les données associé à l'entité. 
 		- Méthode données : les données brutes de l'entité souvent appelé comprenant les métadonnées.
 - **Entité orpheline** : Une entité qui n'a pas de détenteur.
-- **Taxonomies** : un élément qui classe une entité, qui la caractérise afin de cronstruire une structure intelligible des données.
+- **Taxonomies** : un élément qui classe une entité, qui la caractérise afin de construire une structure intelligible des données.
 - **Environnement Avantage numérique** : comprend l'API et l'Application.
 - **Permission de modification** : comprend un accès d'édition (ou dit contribution dans l'application) pour ajouter et modifier du contenu et média).
 - **Endossement** : une personne peut endossé une donnée d'une fiche pour renforcir la valeur de la donnée.
