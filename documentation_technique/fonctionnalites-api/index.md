@@ -8,4 +8,4 @@ Tags: #documentation_technique
 3. [Technologies](/documentation_technique/fonctionnalites-api/taxonomie-technologies.md)
 
 ---
-→ [Retour à la page de destination](/Index.md)
+→ [Retour à la table des matières de la documentation technique](/documentation_technique/index.md)

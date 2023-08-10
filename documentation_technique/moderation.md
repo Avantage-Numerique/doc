@@ -128,3 +128,6 @@ Un utilisateur détenant une entité peut accepter ou non une assignation
 
 
 ## Planifié
+
+---
+→ [Retour à la table des matières de la documentation technique](/documentation_technique/index.md)

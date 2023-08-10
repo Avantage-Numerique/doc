@@ -29,3 +29,6 @@ Skills + technologies
 
 #### Tâches à ajouter
 Ajouter le get dynamique des types via l'API dans l'APP
+
+---
+→ [Retour à la table des matières de la documentation technique](/documentation_technique/index.md)
