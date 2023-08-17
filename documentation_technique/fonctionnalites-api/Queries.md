@@ -14,7 +14,7 @@ On a aussi besoin de faire des requêtes avec une game de OR et AND.
 
 ### Structure d'une requête
 
-Désigner pour recevoir les paramètres de la requêtes en format json. L'api gère les requêtes complètes en POST seuelement présentement.
+Désigner pour recevoir les paramètres de la requêtes en format json. L'api gère les requêtes complètes en POST seulement présentement.
 
 Exemple
 `query` est égale à votre requête.
@@ -91,17 +91,6 @@ let query = {
 };  
 ```
 
-#### `in`
-Implémenté, mais la fonctionnalité n'a pas encore été testé avec un exemple ici.
-
-```javascript
-//@todo
-let query = {
-    in: [
-	    //@todo
-    ]
-};  
-```
 
 ### Mots clés implémentés
 
@@ -139,6 +128,18 @@ let query = {
     name:"", //any/all
     _id: `ne:${entity._id}` // where _id != entity._id
 };  
+```
+#### `in`
+Implémenté.
+Présentement, on ne supporte pas un in, avec des objectid.
+`champ: 'in:liste,avec,des,virgules'`
+
+```javascript
+let query = {  
+    category:"domains",//category == "domaine"
+    name:"",//any/all
+    cateogry: `in:domains,technologies`
+}; 
 ```
 
 ## Todo

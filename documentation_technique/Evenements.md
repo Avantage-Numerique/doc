@@ -10,7 +10,7 @@ Permet d'ajouter une entité événements dans la structures et de présenter da
 - Personne ?
 
 ## [[Brainstorm]] pour Evenements
-On était pas certain de la strucutre.
+On était pas certain de la structutre.
 Finalement on y va que tout les événements ont la même structure. Et certain peuvent avoir des sous-événements.
 
 ## [[Conception]] pour Evenements
