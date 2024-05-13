@@ -15,7 +15,7 @@ else
 Pis on aurait un section "Informations de contact" avec 3 titre, Numéro de téléphone, Courriel, Fax, qui s'affiche si remplis.La migration remplace tout les schémas présentement, l'escouade repasse derrière pour faire sûr que tout est correct avec la migration.Et j'ajouterais dans l'entité person le même contactPoint et aussi j'ajouterais la section liens externes de plus dans person  
 [@Marc-André Martin](https://avantagenumerique.slack.com/team/U0117J58GHE)  
 On en dit quoi? ![:visage_légèrement_souriant:](https://a.slack-edge.com/production-standard-emoji-assets/14.0/google-medium/1f642.png) (modifié)
-![[Pasted image 20240501133814.png]]
+![[contact-point-brainstorm-img.png]]
 
 Marc-André
 Mmm on ne met pas le fax par défault ![:sueur_et_sourire:](https://a.slack-edge.com/production-standard-emoji-assets/14.0/google-medium/1f605.png)
