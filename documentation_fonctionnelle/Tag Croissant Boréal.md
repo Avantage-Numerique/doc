@@ -70,13 +70,34 @@ Multi sélect ?
 ## [[Conception]] pour Tag Croissant boréal
 
 On garde notre champ place.
-On popule la BD avec des place fixe pour les région administrative (pour le tag du Croissant Boréal). 
-On créer une liste d'empalcement qui active l'affichage du tag CB.
+On popule la BD avec des place fixe pour les région administrative? (pour le tag du Croissant Boréal). 
+On créer une liste d'emplacement qui active l'affichage du tag CB.
+
+### Pour la version initiale
+Dans la fiche personne, on ajoute le champs de choix de régions supporter par le badge du CB. Et un choix Autres.
+
+- Votre région d'activité * à changer *
+- Région A
+- Région B
+- Région C
+- En dehors
+
+#### Pour le schema de Personne : 
+On ajoute le champ `region`. (pour le schema)
+On ajoute le champ `badges` de type Array []
+avec x badge dedans.
+Il faut ajouter un schema badges avec : au min ces valeurs :
+- Icone
+- Label
+- Description ?
+- + le nom du schema comme valeur constante.
 
 ## Structure
 
 ```javascript
-
+// Liste des région supporté par le CB
+// Enum / liste dans un champs précis pour le CB
+// Ajout dans le schema pour le CB.
 ```
 
 ### Exemple
