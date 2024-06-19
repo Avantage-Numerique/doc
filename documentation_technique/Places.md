@@ -97,6 +97,9 @@ de https://schema.org/PostalAddress que de place.
 
 
 ## Liens
+Pour une ontologie de lieu :
+https://www.geonames.org/ (user manuel ? https://www.geonames.org/manual.html)
+
 Pour l'intégration d'une carte dans le futur.
 
 [OpenStreetMap choix d'intégration](https://wiki.openstreetmap.org/wiki/FR:D%C3%A9ployer_sa_propre_Slippy_Map)
