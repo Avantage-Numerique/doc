@@ -14,6 +14,8 @@ count (total)
 modifications (user histories count).
 users (nb de users qui a fait des modifications dans cette collection).
 
+
+
 ## [[Conception]] pour Statistiques
 
 
