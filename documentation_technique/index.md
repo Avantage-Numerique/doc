@@ -11,9 +11,9 @@ Tags: #documentation_technique
 ### 3. [Les fonctionnalités de l'API](/documentation_technique/fonctionnalites-api/index.md)
 
 ### 4. Taxonomies
-1. [Compétences](/documentation_technique/fonctionnalites-api/taxonomie-competences.md)
-2. [Domaines](/documentation_technique/fonctionnalites-api/taxonomie-domaines.md)
-3. [Technologies](/documentation_technique/fonctionnalites-api/taxonomie-technologies.md)
+1. [Compétences](Taxonomie-competences.md)
+2. [Domaines](Taxonomie-domaines.md)
+3. [Technologies](Taxonomie-technologies.md)
 ### 5. [Modération](/documentation_technique/moderation.md)
 
 

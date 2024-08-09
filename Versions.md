@@ -1,4 +1,4 @@
-# Versionnage Semantique
+# Versionnage Sémantique
 Nous allons continuer dans le système de version sémantique. Il est largement utiliser dans plusieuers type de logiciels et surtout dans les API.
 ## Il consiste à ces 3 segement :
 
@@ -19,3 +19,10 @@ L'api utilisera ce système de version
 
 # APP 
 L'app aussi utilisera cette version.
+
+# Méthodologie
+Pour construire les notes de version automatiquement, on va devoir utiliser les pull request.
+
+Chaque fonctionnalité / stories devra avoir sa branche. 
+
+Et être merger dans Github pour être en mesure de commenter, d'être révisé et d'être inclus dans les notes de versions.
