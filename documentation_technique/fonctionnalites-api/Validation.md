@@ -7,7 +7,9 @@ Par exemple, vérifier que les identifiants de taxonomie envoyés sont des taxon
 - Taxonomie existante avec cet identifiant
 - De la bonne catégorie pour le champs (catégorie domaine sur le champ domaine de l'entité)
 
-Ou bien toute autre vérification pour éviter la forge. Présentement, l'API n'effectue pas beaucoup de validation sur les données, puisque notre APP s'occupe quand même bien de limiter la saisie de donnée aux données valides. Cela n'empêcherais toute fois pas quelqu'un de reprendre le format d'envoi et de modifier les données. Par exemple, dans certains cas, la modification d'un ObjectId, qui a le même nombre de caractère sera accepté, et donc, pourrait mettre à mal l'APP puisqu'il serait impossible de fetch l'entité correspondant au ObjectId fautif.
+Ou bien toute autre vérification pour éviter la forge. Présentement, l'API effectue une validation sur les types de données attendues (string, date, etc.). Mais on ne valide pas beaucoup la pertinence des données et leur existence actuelle. Puisque notre APP s'occupe quand même bien de limiter la saisie de donnée aux données valides. 
+
+Cela n'empêcherais toute fois pas quelqu'un de reprendre le format d'envoi et de modifier les données. Par exemple, dans certains cas, la modification d'un ObjectId, qui a le même nombre de caractère sera accepté, et donc, pourrait mettre à mal l'APP puisqu'il serait impossible de fetch l'entité correspondant au ObjectId fautif.
 
 Valider les données qui ne sont pas liées, comme le nombre de caractère d'un champ, ou autre vérification (voir le brainstorm pour les données).
 ## [[Brainstorm]] pour Validation

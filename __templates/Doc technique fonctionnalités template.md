@@ -1,28 +1,28 @@
 tag : #documentation_technique 
 
-## Objectifs
+# Objectifs
 
 
-## [[Brainstorm]] pour {{title}}
+# [[Brainstorm]] pour {{title}}
 
 
-## [[Conception]] pour {{title}}
+# [[Conception]] pour {{title}}
 
 
-## Structure
-
-```javascript
-
-```
-
-### Exemple
+# Structure
 
 ```javascript
 
 ```
 
+## Exemple
 
-## Todo
+```javascript
+
+```
 
 
-## Planifié
+# Todo
+
+
+# Planifié

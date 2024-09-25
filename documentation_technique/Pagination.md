@@ -6,7 +6,10 @@ Avoir une expérience rapide avec beaucoup de données.
 
 
 ## [[Brainstorm]] pour Pagination
-Un défi est à garder en tête en lisant le brainstorm : Il nous faut une solution pour paginer chaque collection individuellement, mais aussi pour paginer une requête qui contiendrait plusieurs types d'entités. Dans ce dernier cas de figure, il nécessite beaucoup de logique et de puissance de calcul pour chercher dans les 5-6 collections (voir plus) et de faire le tri dans toutes ces données pour retourner des résultats ordonnés et paginés.
+
+Un défi est à garder en tête en lisant le brainstorm : Il nous faut une solution pour paginer chaque collection individuellement, mais aussi pour paginer une requête qui contiendrait plusieurs types d'entités.
+
+Dans ce dernier cas de figure, il nécessite beaucoup de logique et de puissance de calcul pour chercher dans les 5-6 collections (voir plus) et de faire le tri dans toutes ces données pour retourner des résultats ordonnés et paginés.
 
 Plusieurs piste de solution s'offrent à nous, en voici quelques unes.
 - [Aggregation Pipeline Optimization](https://www.mongodb.com/docs/manual/core/aggregation-pipeline-optimization/#pipeline-coalescence-optimization). Créer une forme de requête personnalisable qui utilise les optimisations du pipeline d'aggrégation, profitant de l'optimisation intégré dans MongoDB. Me fait penser au QueryBuilder, qui a demandé beaucoup de maintenance. Semble résoudre le problème de devoir paginer selon plusieurs collections.
