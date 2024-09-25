@@ -53,6 +53,10 @@ Il y a :
 - NanoID https://www.npmjs.com/package/nanoid
 - KSUID https://github.com/segmentio/ksuid
 
+## À lire
+https://www.w3.org/TR/rdf11-concepts/#section-rdf-graph
+Sur les IRI, litterals.
+
 # [[Conception]] pour Identifiants
 
 
