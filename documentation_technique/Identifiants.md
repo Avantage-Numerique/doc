@@ -35,7 +35,7 @@ erDiagram
     ENTITY {
         uuid id "Identifiant unique d'AVNU privé"
         string unique_id "Identifiant unique d'AVNU public"
-        string[] unique_id "identifiers Tous les au"
+        string[] identifiers "identifiants de tous les autres base de données, wikidata, artsdata, ISNI, etc."
         string search_text "String pour facilité la recherche par texte et indexer le contenu"
         int entity_id "Lien vers la collection"
     }
