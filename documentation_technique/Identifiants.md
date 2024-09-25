@@ -12,13 +12,14 @@ On voit 2 pistes de structure pour les préfixe
 
 ### Pour les entités
 `AN` + `2 premières lettres de l'entité` + `nombre incrémenté`
-ANPE1 (pour la personne au id 1). ou ANPE179.
-ANOR1 (pour l'organisation au id 1) ou ANOR179.
-ANPR1 - projet
-ANEV1 - événement
-ANLI1 - lieu
-ANEQ1 - équipement
-
+- ANPE1 (pour la personne au id 1). ou ANPE179.
+- ANOR1 (pour l'organisation au id 1) ou ANOR179.
+- ANPR1 - projet
+- ANEV1 - événement
+- ANLI1 - lieu
+- ANEQ1 - équipement
+Qui donnerais un identifiant unique d'url comme :
+`avnu.ca/u/anpe1` `/u` = pour unique, qui donne la place à pallier si on rencontre un mur et qu'on doit supporter plusqu'une structure comme :  `avnu.ca/u-2/anpe1`
 ### Pour les taxonomies
 `AN`+`T`+`2 premières lettre de la taxonomie`+`nombre incrémental`
 `ANTCO`
@@ -47,7 +48,10 @@ erDiagram
     PERSON ||--o{ ENTITY : "unique_id = unique_id"
 ```
 
-
+Il y a aussi des lib pour faire des unique id plus petit. Le UUID est long.
+Il y a :
+- NanoID https://www.npmjs.com/package/nanoid
+- KSUID https://github.com/segmentio/ksuid
 
 # [[Conception]] pour Identifiants
 
