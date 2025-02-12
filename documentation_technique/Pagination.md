@@ -55,7 +55,7 @@ La pagination a été faite en 3 parties.
 - L'affichage au frontend
 
 ### Logique au backend (API)
-LAPI reçoit dans la requête, les paramètres suivants :
+L'API reçoit dans la requête, les paramètres suivants :
 - type : Demande à l'API de retourner seulement le type d'entité associé.
 	- Ce paramètre n'est pas nécessaire pour la recherche par tous les type d'entités.
 	- type doit être un string et doit correspondre à une entité existante. 
@@ -66,7 +66,7 @@ LAPI reçoit dans la requête, les paramètres suivants :
 	- skip doit être un nombre et être positif (suppérieur ou égal à 0)
 	- skip doit être comparé au nombre total d'entité trouvé pour s'assurer qu'il ne dépasse pas le maximum. S'il est égal ou plus grand que le total d'entité il doit être mis au skip correspondant au début de la derniere page (total d'entité - entité présent dans la dernière page).
 
-La route par type :
+#### La route par type :
 - Compte le nombre d'entité lié à la recherche
 	- corriger "skip" si le skip dépasse le total d'entité (éviter de retourner vide puisque skip dépasse la dernière page)
 - Rechercher les entités en appliquant le skip.
@@ -78,7 +78,7 @@ La route par type :
 	- currentPage : La page qui devrait s'afficher au frontend. Calculé à partir de `Math.ceil(skip / limit) + 1`
 - Retourne les entité et l'objet de pagination.
 
-La route pour "Tous les types" :
+#### La route pour "Tous les types" :
 - Forme la structure minimale de retour des entités au travers le pipeline d'aggrégation traversant chaque collection et triant avec le skip / limit et sort.
 - Créer l'objet de pagination méta (même format que la route par type)
 - Retourne les entité simplifiée et l'objet de pagination.
@@ -114,15 +114,19 @@ La pagination permet seulement de déclencher un événement de changement de "s
 **La pagination connait seulement la vérité de l'API** via le paramètre "paginationMeta" et lis l'objet pour savoir le nombre de page à affiché, quelle page devrait être affichée comme courante présentement, et les informations nécessaire au calcul du skip pour un prochain changement de page.
 
 L'affichage des numéros de page se fait avec le component pagination (ci-haut).
+
 Le component essayera toujours d'afficher le numéro de la page courante au milieu, en tenant compte d'une variable "showCount" qui décide de combien d'autre page à droite et à gauche de la page courrante on souhaite affiché.
+
 Le component essayera toujours d'adopter le format suivant :
 `< 1 ... 4 5 6 7 8 ... 10 >`
 Dans cet exemple la page courrante est "6", la première page "1" et la dernière page "10".
 
 L'algorithme utilisé pour générer l'affichage des pages est versatile. Il s'agit de partir d'un array vide avec la page courrante à l'intérieur, (sur l'exemple ci-haut "6": `[]` --> `[6]`).
+
 Ensuite on ajoute des pages à gauche et à droite si possible jusqu'à ce qu'on ait atteint le nombre souhaité (showCount). Disons showCount = 2 comme dans l'exemple ci-haut, on aurait :
 `[5, 6, 7]` suivi de la deuxième boucle `[4, 5, 6, 7, 8]`.
 Après avoir terminé d'ajouter les pages à gauche et à droite, on ajoute les indicateurs d'ellipse "..." S'il existe des pages entre la première page (1) et celle de gauche on met une ellipse, pareil pour la page de droite et la dernière page `[ "...", 4, 5, 6, 7, 8, "..." ]`.
+
 Pour terminer, l'algorithme ajoute la première et dernière page. `[ 1, "...", 4, 5, 6, 7, 8, "...", 10 ]` 
 Une autre variable se charge d'ajouter les boutons "<" et ">" pour signifier page précédente et page suivante, avec les "onClick" approprié de "nextPage" et "previousPage".
 

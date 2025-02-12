@@ -10,8 +10,8 @@ On veut pas nécessaire avoir un contribute.
 ## Version 1.1 de place brainstorm 2024-05-24
 
 Région Administrative
--> Filtre les lieux administrive avec le sélect actuel.
--> s'il existe pas, on affiche le créate comme c'est là.
+-> Filtre les lieux administrative avec le sélect actuel.
+-> s'il existe pas, on affiche le create comme c'est là.
 
 Pour les places, on ajoute un état de public / privé.
 Les places, serait embeded
